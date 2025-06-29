@@ -78,7 +78,7 @@ export default function ProductComparisonTable({ productData, setCompare }) {
                 <strong>Price</strong>
               </TableCell>
               {comparedProducts.map((p, idx) => (
-                <TableCell key={idx}>${p.price}</TableCell>
+                <TableCell key={idx}>&#8377; {p.price}</TableCell>
               ))}
             </TableRow>
             <TableRow>
