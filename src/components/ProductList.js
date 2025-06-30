@@ -65,7 +65,7 @@ export default function ProductList({
   return (
     <>
       <div className="col-12 p-2">
-        <div className="col-12 px-4 mb-3 d-flex">
+        <div className="col-12 px-1 px-lg-4 mb-3 d-flex">
           <div className="col">
             <TextField
               fullWidth
@@ -81,8 +81,9 @@ export default function ProductList({
             <>
               <Button
                 size="small"
+                color="warning"
                 variant="outlined"
-                className="float-end ms-3 text-capitalize"
+                className="ms-3 text-capitalize"
                 onClick={clearSelectedProduct}
                 startIcon={<HighlightOffSharpIcon />}
               >
@@ -91,7 +92,7 @@ export default function ProductList({
               <Button
                 size="small"
                 variant="contained"
-                className="float-end ms-3 text-capitalize"
+                className="ms-3 text-capitalize"
                 onClick={() => setCompare(true)}
                 startIcon={<CompareIcon />}
               >
@@ -100,11 +101,11 @@ export default function ProductList({
             </>
           )}
         </div>
-        <div className="col-12 mb-3 px-4">
+        <div className="col-12 px-1 px-lg-4">
           <Button
             variant="outlined"
             size="small"
-            className="text-capitalize me-2"
+            className="text-capitalize me-2 mb-3"
             startIcon={<AppsIcon />}
             onClick={() => clearSelectedProduct()}
           >
@@ -114,14 +115,14 @@ export default function ProductList({
             <Button
               variant="outlined"
               size="small"
-              className="me-2  text-capitalize"
+              className="me-2  text-capitalize mb-3"
               onClick={() => updateProductCategoryWise(cat)}
             >
               {cat}
             </Button>
           ))}
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-1 px-lg-4">
           {productData.map((product) => (
             <div class="col">
               <div class="card card-custom-style">
